@@ -274,6 +274,26 @@ int APS5_VABI sceRudpNetReceived(void) {
     return 0;
 }
 
+int APS5_VABI sceRudpPollCreate() {
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceRudpPollControl() {
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceRudpPollWait() {
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceRudpPollDestroy() {
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
 int APS5_VABI sceRudpGetMaxSegmentSize(uint16_t* size) {
     std::lock_guard<std::mutex> lk(g_mutex);
     if (!g_inited) {
